@@ -94,8 +94,7 @@ limpiar=function(){
         Si funciona, hacer un commit
      */
 
-        //mostrarTextoEnCaja("txtProducto", "");
-        document.getElementById("txtProducto").value = "";
+        mostrarTextoEnCaja("txtProducto", "");
         mostrarTextoEnCaja("txtCantidad", 0);
         mostrarTextoEnCaja("txtPrecio", 0.0);
         mostrarTextoEnCaja("txtPorcentajeDescuento", 0);
