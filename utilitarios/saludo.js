@@ -14,6 +14,8 @@ saludar =  function(){
     mostrarTexto("lblResultado", mensajeBienvenido);
 
     mostrarImagen("imgSaludo", "./imagenes/hola.gif" )
+
+    mostrarTextoEnCaja("txtNombre", " ")
 }
 
 mostrarImagen = function(idComponente, rutaImagen){
@@ -29,6 +31,12 @@ recuperarTexto = function(idComponente){
     componente = document.getElementById(idComponente);
     valorIngresado = componente.value;
     return valorIngresado;
+}
+
+mostrarTextoEnCaja = function(idComponente, mensaje){
+    let componente;
+    componente = document.getElementById(idComponente);
+    componente.value = mensaje;
 }
 
 recuperarInt = function(idComponente){
