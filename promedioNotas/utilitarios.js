@@ -8,7 +8,7 @@ mostrarTexto=function(idComponente,mensaje){
     let componente;
     componente=document.getElementById(idComponente);
     // Para que muestre con dos decimales
-    mensaje = parseFloat(mensaje).toFixed(2);
+    //mensaje = parseFloat(mensaje).toFixed(2);
     componente.innerText = mensaje;
 }
 mostrarTextoEnCaja = function(idComponente,mensaje){
@@ -31,10 +31,14 @@ recuperarInt = function(idComponente){
     return valorEntero;
 }
 
+
+
 recuperarFloat = function(idComponente){
-    let valorCaja= recuperarTexto(idComponente);
-    let valorFlotante = parseFloat(valorCaja);
-    return valorFlotante;
+    let valor;
+    let valorFloat;
+    valor=recuperarTexto(idComponente);
+    valorFloat=parseFloat(valor);
+    return valorFloat;
 }
 
 
