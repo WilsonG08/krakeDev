@@ -33,3 +33,35 @@ invertirCadena = function(cadena){
 }
 
 
+buscarLetra = function(cadena, letra){
+    let letraIterada;
+    let existeletra = false;
+
+    for (let i = 0; i < cadena.length; i++) {
+        letraIterada = cadena.charAt(i);
+        if (letraIterada == letra) {
+            existeletra = true;
+        }
+    }
+    
+    if (existeletra == true) {
+        console.log("Existe");
+        return true;
+    }else{
+        console.log("No existe");
+        return false;
+    }
+}
+
+contarMAyusculas = function(cadena){
+    let letra;
+    let contadorMAyusculas = 0;
+
+    for (let i = 0; i < cadena.length; i++) {
+        letraIterada = cadena.charAt(i);
+        if (esMayuscula(letra)) {
+            contadorMAyusculas++;
+        }
+    }
+    console.log(contadorMAyusculas);
+}
