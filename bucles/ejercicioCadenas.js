@@ -24,12 +24,12 @@ recorarCadena = function(cadena){
 
 
 invertirCadena = function(cadena){
-    let caracter = "";
+    let resultado = "";
 
     for (let posicion = cadena.length -1; posicion >= 0; posicion--) {        
-        caracter += cadena[posicion];
+        resultado += cadena[posicion];
     }
-    return caracter;
+    return resultado;
 }
 
 
