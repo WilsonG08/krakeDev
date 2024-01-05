@@ -41,7 +41,7 @@ function validarPassword(password) {
     return errores;
 }
 
-// Función para ejecutar la validación
+// Función para ejecutar la validaciónn
 function ejecutarValidacion() {
     let password = document.getElementById('txtPassword').value; 
     let errores = validarPassword(password);
