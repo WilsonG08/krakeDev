@@ -23,6 +23,7 @@ mostrarResultados = function (arregloNumeros) {
     let cmpTabla = document.getElementById('divTabla');
     let tabla = '<table><tr><th>NUMERO ALEATORIO</th></tr>';
     let numArreglo;
+    
     for (let i = 0; i < arregloNumeros.length; i++) {
         numArreglo = arregloNumeros[i];
         tabla += '<tr><td>';
